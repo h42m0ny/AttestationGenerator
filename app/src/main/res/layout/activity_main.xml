@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        tools:context=".MainActivity" android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/firstname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/inp_firstname__mainactivity"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/lastname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/inp_lastname__mainactivity"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/birthday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/inp_birthday__mainactivity"
+                android:inputType="date" />
+
+            <EditText
+                android:id="@+id/lieunaissance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/inp_lieunaissance__mainactivity"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/inp_address__mainactivity"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/town"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/inp_town__mainactivity"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/zipcode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/inp_zipcode__mainactivity"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/motifsortie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lbl_motifsortie_mainactivity" />
+
+            <CheckBox
+                android:id="@+id/chk_travail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/checked_travail_mainactivity" />
+
+            <CheckBox
+                android:id="@+id/chk_courses"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/checked_courses_mainactivity" />
+
+            <CheckBox
+                android:id="@+id/chk_sante"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/checked_sante_mainactivity" />
+
+            <CheckBox
+                android:id="@+id/chk_famille"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/checked_famille_mainactivity" />
+
+            <CheckBox
+                android:id="@+id/chk_sport"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/checked_sport_mainactivity" />
+
+            <CheckBox
+                android:id="@+id/chk_judiciaire"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/checked_judiciaire_mainactivity" />
+
+            <CheckBox
+                android:id="@+id/chk_missions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/checked_missions_mainactivity" />
+
+            <EditText
+                android:id="@+id/datesortie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/inp_datesortie__mainactivity"
+                android:inputType="date" />
+
+            <EditText
+                android:id="@+id/time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="time"
+                android:text="@string/inp_time__mainactivity" />
+
+            <Button
+                android:id="@+id/btn_send_mainactivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_send_mainactivity" />
+        </LinearLayout>
+    </ScrollView>

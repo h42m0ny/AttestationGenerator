@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Attestation Generator</string>
+    <string name="checked_travail_mainactivity">Déplacements entre le domicile et le lieu d’exercice de l’activité professionnelle, lorsqu\'ils sont indispensables à l\'exercice d\’activités ne pouvant être organisées sous forme de télétravail ou déplacements professionnels ne pouvant être différés.</string>
+    <string name="checked_courses_mainactivity">Déplacements pour effectuer des achats de fournitures nécessaires à l\’activité professionnelle et des achats de première nécessité dans des établissements dont les activités demeurent autorisées</string>
+    <string name="checked_sante_mainactivity">Consultations et soins ne pouvant être assurés à distance et ne pouvant être différés ; consultations et soins des patients atteints d\'une affection de longue durée.</string>
+    <string name="checked_famille_mainactivity">Déplacements pour motif familial impérieux, pour l\’assistance aux personnes vulnérables ou la garde d\’enfants.</string>
+    <string name="checked_sport_mainactivity">Déplacements brefs, dans la limite d\'une heure quotidienne et dans un rayon maximal d\'un kilomètre autour du domicile, liés soit à l\'activité physique individuelle des personnes, à l\'exclusion de toute pratique sportive collective et de toute proximité avec d\'autres personnes, soit à la promenade avec les seules personnes regroupées dans un même domicile, soit aux besoins des animaux de compagnie</string>
+    <string name="checked_judiciaire_mainactivity">Convocation judiciaire ou administrative.</string>
+    <string name="checked_missions_mainactivity">Participation à des missions d\’intérêt général sur demande de l\’autorité administrative.</string>
+    <string name="btn_send_mainactivity">Envoyer</string>
+    <string name="inp_firstname__mainactivity">Prénom</string>
+    <string name="inp_lastname__mainactivity">Nom</string>
+    <string name="inp_birthday__mainactivity">dd/MM/YYYY</string>
+    <string name="inp_datesortie__mainactivity">dd/MM/YYYY</string>
+    <string name="inp_time__mainactivity">HH:mm</string>
+    <string name="inp_lieunaissance__mainactivity">Lieu de naissance</string>
+    <string name="inp_address__mainactivity">Adresse</string>
+    <string name="inp_town__mainactivity">Ville</string>
+    <string name="inp_zipcode__mainactivity">Code postal</string>
+    <string name="lbl_motifsortie_mainactivity">Motif de sortie</string>
+    <string name="title_activity_web">WebActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+</resources>
