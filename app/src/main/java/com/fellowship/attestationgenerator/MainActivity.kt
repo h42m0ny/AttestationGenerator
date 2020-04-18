@@ -7,9 +7,9 @@ import android.support.annotation.RequiresApi
 import android.support.v7.app.AppCompatActivity
 import android.view.View
 import android.widget.Button
-import android.widget.CheckBox
 import android.widget.EditText
 import android.widget.RadioButton
+import java.text.SimpleDateFormat
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
 
@@ -59,37 +59,6 @@ class MainActivity : AppCompatActivity() {
         cbMissions = findViewById<View>(R.id.chk_missions) as RadioButton;
 
 
-//        cbTravail!!.setOnClickListener(View.OnClickListener {
-//            it as RadioButton;
-//            onCheckboxClicked(it);
-//        });
-//        cbCourses!!.setOnClickListener(View.OnClickListener {
-//            it as RadioButton;
-//            onCheckboxClicked(it);
-//        });
-//        cbSante!!.setOnClickListener(View.OnClickListener {
-//            it as RadioButton;
-//            onCheckboxClicked(it);
-//        });
-//        cbFamille!!.setOnClickListener(View.OnClickListener {
-//            it as RadioButton;
-//            onCheckboxClicked(it);
-//        });
-//        cbSport!!.setOnClickListener(View.OnClickListener {
-//            it as RadioButton;
-//            onCheckboxClicked(it);
-//        });
-//        cbJudiciaire!!.setOnClickListener(View.OnClickListener {
-//            it as RadioButton;
-//            onCheckboxClicked(it);
-//        });
-//        cbMissions!!.setOnClickListener(View.OnClickListener {
-//            it as RadioButton;
-//           onCheckboxClicked(it);
-//        });
-
-
-
         buttonSubmit!!.setOnClickListener {
             val intent = Intent(this@MainActivity, WebFillForm::class.java);
             val firstname = editTextFirstName!!.text.toString();
@@ -100,7 +69,10 @@ class MainActivity : AppCompatActivity() {
             val town = editTextTown!!.text.toString();
             val zipcode = editTextZipCode!!.text.toString();
 
-            val datesortie = editTextDateSortie!!.text.toString();
+
+            val inputFormat = SimpleDateFormat("dd/MM/yyyy");
+            val outputFormat = SimpleDateFormat("yyyy-MM-dd");
+            val datesortie = outputFormat.format(inputFormat.parse(editTextDateSortie!!.text.toString()));
             val time = editTextTime!!.text.toString();
 
             intent.putExtra("firstname", firstname);
@@ -123,14 +95,10 @@ class MainActivity : AppCompatActivity() {
         };
     }
 
-//    private fun onCheckboxClicked(cb : RadioButton) {
-//
-//
-//    }
 
     @RequiresApi(Build.VERSION_CODES.O)
     private fun initDateAndTime(editTxtDatesortie : EditText, editTxtTime : EditText) {
-        val currDate = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd"));
+        val currDate = LocalDateTime.now().format(DateTimeFormatter.ofPattern("dd/MM/yyyy"));
         editTxtDatesortie.setText(currDate);
         val currTime = LocalDateTime.now().format(DateTimeFormatter.ofPattern("HH:mm"));
         editTxtTime.setText(currTime);
