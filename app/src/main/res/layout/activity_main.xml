@@ -72,47 +72,53 @@
                 android:layout_height="wrap_content"
                 android:text="@string/lbl_motifsortie_mainactivity" />
 
-            <CheckBox
-                android:id="@+id/chk_travail"
+            <RadioGroup
+                android:id="@+id/radioGpMotif"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/checked_travail_mainactivity" />
+                android:layout_height="match_parent" >
 
-            <CheckBox
-                android:id="@+id/chk_courses"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/checked_courses_mainactivity" />
+                <RadioButton
+                    android:id="@+id/chk_travail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/checked_travail_mainactivity" />
 
-            <CheckBox
-                android:id="@+id/chk_sante"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/checked_sante_mainactivity" />
+                <RadioButton
+                    android:id="@+id/chk_courses"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/checked_courses_mainactivity" />
 
-            <CheckBox
-                android:id="@+id/chk_famille"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/checked_famille_mainactivity" />
+                <RadioButton
+                    android:id="@+id/chk_sante"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/checked_sante_mainactivity" />
 
-            <CheckBox
-                android:id="@+id/chk_sport"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/checked_sport_mainactivity" />
+                <RadioButton
+                    android:id="@+id/chk_famille"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/checked_famille_mainactivity" />
 
-            <CheckBox
-                android:id="@+id/chk_judiciaire"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/checked_judiciaire_mainactivity" />
+                <RadioButton
+                    android:id="@+id/chk_sport"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/checked_sport_mainactivity" />
 
-            <CheckBox
-                android:id="@+id/chk_missions"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/checked_missions_mainactivity" />
+                <RadioButton
+                    android:id="@+id/chk_judiciaire"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/checked_judiciaire_mainactivity" />
+
+                <RadioButton
+                    android:id="@+id/chk_missions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/checked_missions_mainactivity" />
+            </RadioGroup>
 
             <EditText
                 android:id="@+id/datesortie"
